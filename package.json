@@ -12,7 +12,7 @@
       "name": "Dmitri Galakhov",
       "email": "d.galakhov@4dd.de",
       "username": "galakhov"
-    },
+    }
   ],
   "scripts": {
     "start": "webpack-dev-server",
