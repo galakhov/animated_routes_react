@@ -1,0 +1,63 @@
+/* Content styles both for Index and Subpage HTML giles
+-------------------------------------------------- */
+@media (min-width: 1200px) {
+	.container {
+		max-width:96% !important;
+	}
+}
+
+@media (max-width:768px){
+	.footer .p-2:nth-child(1) nav{
+		position: fixed !important;
+    bottom: -30px;
+    left: 30%;
+
+	}
+	.showcase,
+	.content-top{
+		margin-top:1rem !important;
+	}
+	.product-showcase{
+		display:none;
+	}
+	
+}
+body{
+	color:$primary__color;
+}
+.showcase{
+	margin-top:7rem;
+}
+
+.sprechen{
+	margin-top:7rem;
+
+	h1{
+		font-family:$font-family-title;
+		color:$title__color;
+
+	}
+	p{
+		font-family:'pfdintextcompro', sans-serif;
+		font-size:11px;
+	}
+}
+.content-top {
+	margin-top:9rem;
+	.steigerung{
+		display:inline-block;
+		h3{
+			font-family: "helveticaNeue", sans-serif;
+            color: #e0f0f4;
+		}
+		p{
+			font-family: 'pfdintextcompro', sans-serif;
+			font-size: 12px;
+		}
+	}
+	
+}
+.content-down h1{
+	font-family: "helveticaNeue", sans-serif;
+    color: #e0f0f4;
+}

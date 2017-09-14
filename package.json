@@ -1,7 +1,23 @@
 {
+  "name": "animated_routes_react",
+  "version": "0.0.1",
+  "description": "Animated route transitions with React Router 4, ReactTransitionGroup and Animated.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galakhov/animated_routes_react.git"
+  },
+  "author": "Martin Haagensli (mhaagens)",
+  "contributors": [
+    {
+      "name": "Dmitri Galakhov",
+      "email": "d.galakhov@4dd.de",
+      "username": "galakhov"
+    },
+  ],
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "rm -rf ./dist && webpack --config webpack.config.dist.js -p"
+    "clean": "(rm -rf ./dist && mkdir ./dist)",
+    "build": "webpack --config webpack.config.dist.js -p"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -26,16 +42,19 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
+    "url-loader": "^0.5.9",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
     "whatwg-fetch": "^2.0.3"
   },
   "dependencies": {
     "animated": "^0.2.0",
+    "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
     "react-router-dom": "^4.1.1",
-    "react-transition-group": "^1.2.0"
+    "react-transition-group": "^1.2.0",
+    "reactstrap": "^4.8.0"
   }
 }

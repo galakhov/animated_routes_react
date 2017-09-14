@@ -1,0 +1,31 @@
+/* Fontface and general Typography style
+-------------------------------------------------- */
+@font-face {
+  font-family: 'pfdintextcompro';
+  src: url('/fonts/pfdintextpro-medium.woff') format('woff');
+  src: url('/fonts/pfdintextpro-medium.eot');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'eurostilebold';
+  src: url('/fonts/eurstl24.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticaNeue';
+  src: url('/fonts/HelveticaNeueLTStd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&subset=devanagari,latin-ext');
+
+h1 {
+  color: #fff;
+}

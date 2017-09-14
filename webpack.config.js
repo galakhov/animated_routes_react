@@ -85,7 +85,35 @@ module.exports = {
 						}
 					}
 				]
-			}
+			},
+			{
+        test: /\.woff(2)?(\?v=[a-z0-9\-]\.[a-z0-9\-]\.[a-z0-9])?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'application/font-woff',
+							name: '[name].[ext]',
+							outputPath: 'assets/',
+							// publicPath: '/',
+            },
+          }
+        ],
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[a-z0-9\-]\.[a-z0-9\-]\.[a-z0-9])?$/,
+        use: [
+          {
+						loader: 'url-loader',
+						options: {
+					 		name: '[name].[ext]',
+							outputPath: 'assets/',
+							// publicPath: '/'
+						},
+					}
+        ],
+      }
 		]
 	},
 

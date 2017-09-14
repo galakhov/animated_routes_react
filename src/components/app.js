@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Switch, Route, matchPath } from "react-router-dom";
+import { Route, matchPath } from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
+import AnimatedSwitch from "./animated_switch";
 import { firstChild } from "../utils/helpers";
 
 import TopBar from "./top_bar";
@@ -8,6 +9,7 @@ import Home from "./home";
 import Projects from "./projects";
 import ProjectItem from "./project_item";
 import Missed from "./missed";
+import Footer from "./footer";
 
 export default class App extends Component {
 	constructor(props) {
@@ -33,52 +35,31 @@ export default class App extends Component {
 				<TopBar />
 				<Route
 					render={({ location }) => (
-						<Switch key={location.key} location={location}>
-							<Route
-								exact
-								path="/"
-								render={({ match, ...rest }) => (
-									<TransitionGroup component={firstChild}>
-										{match && <Home {...rest} />}
-									</TransitionGroup>
-								)}
-							/>
-							<Route
-								exact
-								path="/projects"
-								render={({ match, ...rest }) => (
-									<TransitionGroup component={firstChild}>
-										{match &&
-											<Projects
-												projects={this.state.projects}
-												{...rest}
-											/>}
-									</TransitionGroup>
-								)}
-							/>
-							<Route
-								path="/projects/:id"
-								render={({ match, ...rest }) => (
-									<TransitionGroup component={firstChild}>
-										{match &&
-											<ProjectItem
-												projects={this.state.projects}
-												{...match}
-												{...rest}
-											/>}
-									</TransitionGroup>
-								)}
-							/>
-							<Route
-								render={({ match, ...rest }) => (
-									<TransitionGroup component={firstChild}>
-										{match && <Missed {...rest} />}
-									</TransitionGroup>
-								)}
-							/>
-						</Switch>
+						<TransitionGroup component="main">
+							<AnimatedSwitch
+								key={location.key}
+								location={location}
+							>
+								<Route exact path="/" component={Home} />
+								<Route
+									exact
+									path="/projects"
+									render={props => (
+										<Projects {...props} projects={this.state.projects} />
+									)}
+								/>
+								<Route
+									path="/projects/:id"
+									render={props => (
+										<ProjectItem {...props} projects={this.state.projects} />
+									)}
+								/>
+								<Route component={Missed} />
+							</AnimatedSwitch>
+						</TransitionGroup>
 					)}
 				/>
+				<Footer />
 			</div>
 		);
 	}
