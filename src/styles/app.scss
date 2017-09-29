@@ -30,7 +30,7 @@ body,
     width: 100%;
     max-height: 100vh;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
     font-family: "Cerebri Sans", Avenir, Helvetica, Segoe UI, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -40,7 +40,7 @@ body,
     flex-flow: column;
     flex: 1;
     height: 100%;
-    background-color: #333;
+    background-color: transparent;
 }
 
 main {
@@ -71,15 +71,22 @@ main {
     width: 100%;
     padding: 0 3rem;
     z-index: 999;
-    background-color: #333;
+    background-color: transparent;
 
-    a {
+    li.nav-item a.nav-link {
         margin-right: 1.5rem;
-        color: #fff;
         text-decoration: none;
         font-weight: 500;
+        &:visited {
+          color: rgba(255, 255, 255, 1.0);
+        }
         &.active {
-            text-decoration: line-through;
+          // text-decoration: line-through;
+          color: rgba(255, 255, 255, 1.0);
+          font-weight: bold;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, 1.0);
         }
     }
 }
@@ -90,9 +97,10 @@ main {
     flex-flow: column;
     padding: calc(62px + 3rem) 3rem 3rem 3rem;
     height: 100%;
-    overflow-y: scroll;
+    // overflow-y: scroll;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    background-color: #333;
+    background-color: transparent;
 
     ul {
         display: flex;

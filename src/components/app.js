@@ -6,6 +6,7 @@ import { firstChild } from "../utils/helpers";
 
 import TopBar from "./top_bar";
 import Home from "./home";
+import Firm from "./firm";
 import Projects from "./projects";
 import ProjectItem from "./project_item";
 import Missed from "./missed";
@@ -54,6 +55,7 @@ export default class App extends Component {
 										<ProjectItem {...props} projects={this.state.projects} />
 									)}
 								/>
+								<Route path="/firm" component={Firm} />
 								<Route component={Missed} />
 							</AnimatedSwitch>
 						</TransitionGroup>

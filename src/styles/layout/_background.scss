@@ -1,10 +1,30 @@
 /* Background styles
 -------------------------------------------------- */
-#homepage{
-	background:url(/images/background.jpg) no-repeat center center fixed;
+body.homepage {
+	background:url("/images/background.jpg") no-repeat center center fixed;
 	background-size:cover;
+	-webkit-transition: all 750ms ease-in;
+	-moz-transition: all 750ms ease-in;
+	-o-transition: all 750ms ease-in;
+	-ms-transition: all 750ms ease-in;
+	transition: all 750ms ease-in;
+	/* -webkit-transition: opacity 750ms ease-in;
+	-moz-transition: opacity 750ms ease-in;
+	-o-transition: opacity 750ms ease-in;
+	-ms-transition: opacity 750ms ease-in;
+	transition: opacity 750ms ease-in; */
 }
-#subpage{
-	background:url(/images/background-subpage.jpg) no-repeat center center fixed;
+body.subpage {
+	background:url("/images/background-subpage.jpg") no-repeat center center fixed;
 	background-size:cover;
+	-webkit-transition: all 750ms ease-in;
+	-moz-transition: all 750ms ease-in;
+	-o-transition: all 750ms ease-in;
+	-ms-transition: all 750ms ease-in;
+	transition: all 750ms ease-in;
+	/* -webkit-transition: opacity 750ms ease-in;
+	-moz-transition: opacity 750ms ease-in;
+	-o-transition: opacity 750ms ease-in;
+	-ms-transition: opacity 750ms ease-in;
+	transition: opacity 750ms ease-in; */
 }

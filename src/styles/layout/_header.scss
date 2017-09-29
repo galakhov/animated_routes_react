@@ -23,10 +23,33 @@ body{
 
 }
 
-.navbar-toggler{
-	width: 50px;
+.navbar {
+	width: 100%;
+
+	.navbar-nav {
+
+	}
+	.fixed-top {
+		left: auto;
+	}
+
+	li.nav-item {
+		@media (min-width: 992px) {
+			float: left;
+		}
+	}
+}
+
+.navbar-light .navbar-toggler{
+	@media (min-width: 992px) {
+		display: none;
+	}
+	width: 55px;
 	height: 45px;
-	position: relative;
+	position: absolute;
+	right: 0;
+	top: 45px;
+  z-index: 1035;
 
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -37,8 +60,9 @@ body{
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
-	.icon-bar{
+	background-color: rgba(255,255,255,0.9);
 
+	/* .navbar-toggler-icon{
 		display: block;
 		position: absolute;
 		height: 1px;
@@ -64,12 +88,10 @@ body{
 		&:nth-of-type(3){
 			top: 22px;
 		}
-
-
-	}
+	} */
 
 }
-.openHamburger .icon-bar{
+.openHamburger .navbar-toggler-icon{
 	&:nth-of-type(1){
 		top: 22px;
 		transform: rotate(45deg);
@@ -86,4 +108,10 @@ body{
 .collapse.show{
 	background:rgba(0,0,0,0.5);
 	padding-left:10px;
+}
+
+.collapse {
+  @media (min-width: 992px) {
+		display: block;
+	}
 }

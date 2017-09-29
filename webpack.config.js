@@ -81,7 +81,8 @@ module.exports = {
 							pngquant: {
 								quality: "75-90",
 								speed: 4
-							}
+							},
+							publicPath: '/',
 						}
 					}
 				]
@@ -96,7 +97,7 @@ module.exports = {
               mimetype: 'application/font-woff',
 							name: '[name].[ext]',
 							outputPath: 'assets/',
-							// publicPath: '/',
+							publicPath: '/',
             },
           }
         ],
@@ -109,7 +110,7 @@ module.exports = {
 						options: {
 					 		name: '[name].[ext]',
 							outputPath: 'assets/',
-							// publicPath: '/'
+							publicPath: '/'
 						},
 					}
         ],

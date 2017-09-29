@@ -1,4 +1,4 @@
-/* Content styles both for Index and Subpage HTML giles
+/* Content styles both for Index and Subpage HTML files
 -------------------------------------------------- */
 @media (min-width: 1200px) {
 	.container {
@@ -20,7 +20,7 @@
 	.product-showcase{
 		display:none;
 	}
-	
+
 }
 body{
 	color:$primary__color;
@@ -33,13 +33,12 @@ body{
 	margin-top:7rem;
 
 	h1{
-		font-family:$font-family-title;
-		color:$title__color;
-
+		font-family: $font-family-title;
+		color: $title__color;
 	}
 	p{
 		font-family:'pfdintextcompro', sans-serif;
-		font-size:11px;
+		font-size:14px;
 	}
 }
 .content-top {
@@ -48,16 +47,23 @@ body{
 		display:inline-block;
 		h3{
 			font-family: "helveticaNeue", sans-serif;
-            color: #e0f0f4;
+      color: $title__color;
 		}
 		p{
 			font-family: 'pfdintextcompro', sans-serif;
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
-	
+
 }
-.content-down h1{
-	font-family: "helveticaNeue", sans-serif;
-    color: #e0f0f4;
+.content-down {
+	bottom: 6%;
+	position: fixed;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	h1{
+		font-family: "helveticaNeue", sans-serif;
+    color: $title__color;
+	}
 }

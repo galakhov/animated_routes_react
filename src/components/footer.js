@@ -6,7 +6,7 @@ export default class Footer extends Component {
 	render() {
 		return (
      <footer className="footer">
-       <div className="container d-flex justify-content-end ">
+       <div className="container d-flex justify-content-end">
          <div className="mr-auto p-2 flex-sm-column">
            <nav>
              <ul className="d-flex flex-row">
@@ -14,7 +14,7 @@ export default class Footer extends Component {
                  <NavLink className="nav-link" to="/contact">Kontakt</NavLink>
                </li>
                <li className="nav-item">
-                 <NavLink className="nav-link" to="/contact">Imressum</NavLink>
+                 <NavLink className="nav-link" to="/impressum">Imressum</NavLink>
                </li>
              </ul>
            </nav>
@@ -47,6 +47,48 @@ export default class Footer extends Component {
            </nav>
          </div>
        </div>
+
+			 <div className="modal fade text-dark" id="contact_form">
+				 <div className="modal-dialog">
+					 <div className="modal-content">
+						 <div className="modal-header bg-dark">
+							 <h5 className="modal-title text-white" id="contactModalTitle" >
+								 Kontakt Formula
+							 </h5>
+							 <button type="button" className="close text-white" data-dismiss="modal" aria-label="Close">
+						 <span aria-hidden="true">&times;</span>
+					 </button>
+						 </div>
+						 <div className="modal-body">
+							 <form>
+								 <div className="form-group">
+									 <label htmlFor="name">Name</label>
+									 <input type="text" className="form-control" />
+								 </div>
+								 <div className="form-group">
+									 <label htmlFor="name">Vorname</label>
+									 <input type="text" className="form-control" />
+								 </div>
+								 <div className="form-group">
+									 <label htmlFor="email">E-mail</label>
+									 <input type="email" className="form-control" />
+								 </div>
+								 <div className="form-group">
+									 <label htmlFor="tel">Telephone</label>
+									 <input type="tel" className="form-control" />
+								 </div>
+								 <div className="form-group">
+										 <label htmlFor="cachricht">Nachricht</label>
+										 <textarea className="form-control"></textarea>
+								 </div>
+							 </form>
+						 </div>
+						 <div className="modal-footer">
+							 <button type="submit" className="btn btn-primary btn-block" value="Senden">Senden</button>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
      </footer>
 		)
 	}
