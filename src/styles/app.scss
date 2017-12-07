@@ -92,28 +92,40 @@ main {
 }
 
 .page {
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     display: flex;
     flex: 1;
     flex-flow: column;
     padding: calc(62px + 3rem) 3rem 3rem 3rem;
     height: 100%;
     // overflow-y: scroll;
-    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     background-color: transparent;
+    overflow-y: auto;
 
     ul {
         display: flex;
         flex-flow: row wrap;
         list-style: none;
-        padding: 0 0 6rem 0;
+        /* padding: 0 0 6rem 0; */
+        padding: 0;
         margin: 0;
+
         li {
             display: flex;
-            width: calc(100% / 4 - 2rem);
-            min-height: 200px;
+            /* width: calc(100% / 4 - 2rem);
+            min-height: 200px; */
             margin-bottom: 2rem;
             margin-right: 2rem;
+            font-family: 'pfdintextcompro', sans-serif;
+
             div {
                 display: flex;
                 flex: 1;
@@ -135,19 +147,13 @@ main {
             }
         }
     }
-    &.home {
+    /* &.home, &.impressum {
     	h1 {
-    		max-width: 30ch;
-        margin-top: 0;
+        margin: -15px auto 0px;
+        max-width: 100%;
+        position: relative;
     	}
-        a {
-            color: #fff;
-            text-decoration: none;
-            &:hover {
-                text-decoration: line-through;
-            }
-        }
-    }
+    } */
     &.projects {
         flex-flow: row wrap;
         h1 {
@@ -173,12 +179,13 @@ main {
     	align-items: center;
     	align-content: center;
     	justify-content: center;
-    	background: url("rdit.gif") no-repeat;
+    	/* background: url("rdit.gif") no-repeat; */
+      background-color: #999;
     	background-size: cover;
     	background-position: center center;
 
     	h1 {
-    		font-size: 20vw;
+    		font-size: 10vw;
     	}
     }
 }
@@ -199,6 +206,14 @@ main {
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1140px) {

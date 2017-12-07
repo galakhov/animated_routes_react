@@ -21,12 +21,12 @@ class Home extends Component {
 						<img className="img-fluid align-middle hidden-xs-down" alt="Responsive image" src="images/image1.png" alt="image to be defined" />
 					</div>
 					<div className="content sprechen">
-						<p className="mx-auto col-sm-8">Sprechen wir zunächst nicht über uns. Sprechen wir über Ihre Arbeit.
-		Sie haben Aufgabenstellungen. Sie haben Vorstellungen. Sie brauchen Partner die komplexe Zusammenhänge verstehen, branchenübergreifend</p>
+						<h3 className="title h5">Umweltschonender Schiffsverkehr mit RBU</h3>
+						<p className="mx-auto col-sm-8">Wir bei RBU haben spezielle Abgasklappen für Schiffsmotoren entwickelt, um die Energieeffizienz durch Wärmeerhalt zu steigern. RBU Klappen tragen außerdem zur Reduzierung der Schwefelanteile in Schiffsabgasen bei – einer elementaren Vorgabe der International Maritime Organization (IMO).</p>
 					</div>
 				</div>
 				<div className="col-sm-12 pl-0 pr-5 content-down text-center">
-					<h1 className="title display-5 mr-5 pr-5">BRANCHEN</h1>
+					<h1 className="title display-5 mr-5 pr-5"></h1>
 				</div>
 			</div>
 		);

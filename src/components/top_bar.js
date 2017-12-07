@@ -28,21 +28,29 @@ export default class TopBar extends Component {
 							<NavItem>
 								<NavLink exact to="/" className="nav-link js-scroll-trigger">Home</NavLink>
 							</NavItem>
+							{
+								/*
+								<NavItem>
+									<NavLink className="nav-link" to="/projects">Leistungsspektrum</NavLink>
+								</NavItem>
+								*/
+							}
 							<NavItem>
-								<NavLink className="nav-link" to="/projects">Leistungsspektrum</NavLink>
-							</NavItem>
-							<li className="nav-item">
-								<NavLink className="nav-link" to="/firm">Unternehmen</NavLink>
-							</li>
-							<NavItem>
-								<NavLink className="nav-link" to="/branchen">Branchen</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink className="nav-link" to="/downloads">Downloads</NavLink>
+								<NavLink className="nav-link" to="/rbu-thermo-lock">RBU Thermo-Lock</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className="nav-link" to="/contact" data-toggle="modal" href="#contact_form">Kontakt</NavLink>
+								<NavLink className="nav-link" to="/ultra-clean">Ultra Clean</NavLink>
 							</NavItem>
+							<NavItem>
+								<NavLink className="nav-link" to="/unsere-klappen">Unsere Klappen</NavLink>
+							</NavItem>
+							{
+								/*
+								<NavItem>
+									<NavLink className="nav-link" to="/contact" data-toggle="modal" href="#contact_form">Kontakt</NavLink>
+								</NavItem>
+								*/
+							}
 						</div>
 					</Nav>
 				</Collapse>
