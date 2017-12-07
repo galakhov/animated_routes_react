@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 class Clean extends Component {
 	componentDidMount() {
 		// document.body.classList.toggle('subpage', this.props.isSet);
-		document.body.classList.add('subpage');
+		document.body.classList.add('subpage3');
 	}
 	componentWillReceiveProps(nextProps) {
 		// document.body.classList.toggle('subpage', nextProps.isSet);
 	}
 	componentWillUnmount() {
-		document.body.classList.remove('subpage');
+		document.body.classList.remove('subpage3');
 	}
 
 	render() {
