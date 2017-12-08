@@ -23,7 +23,7 @@ class Klappen extends Component {
 									<img className="responsive" width="480px" alt="Responsive image" src="/images/image2.png" alt="image to be defined" />
 							</div>
 							<div className="col-sm-12 col-md-8 mt-1 text-left pl-0">
-								<h3 className="title h5">Ultra Clean</h3>
+								<h3 className="title h5">Unsere Klappen</h3>
 								<ul>
 									<li>RBU Regelklappen: ein- oder mehrflügelig, nach Anforderung durchschlagend, für kontinuierliche Regelung oder mit Dichtleisten für hohe Dichtheit im geschlossenen Zustand</li>
 									<li>RBU Sicherheitsklappen: mit selbstlösendem Gegengewicht im Störfall – unter allen Bedingungen sicheres Schließen/Öffnen der Klappe</li>
@@ -34,7 +34,7 @@ class Klappen extends Component {
 							</div>
 						</div>
 						<div className="col-sm-12 pl-0 pr-0 content-down text-center">
-								<h1 className="title display-5">Ultra Clean</h1>
+								<h1 className="title display-5">Unsere Klappen</h1>
 						</div>
 					</div>
 				</div>

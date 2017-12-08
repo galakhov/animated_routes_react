@@ -22,7 +22,7 @@ class ThermoLock extends Component {
 							<img className="responsive" width="480" alt="Responsive image" src="/images/image2.png" alt="image to be defined" />
 						</div>
 						<div className="steigerung col-lg-6 my-auto pl-3">
-							<div className="col-md-9 mt-1 text-left pl-0">
+							<div className="col-md-9 mt-1 text-left pl-0 mb-5">
 								<h3 className="title h5">Thermo Lock</h3>
 								<p>RBU Klappen verhindern das schnelle Auskühlen von Kesselanlage und Hauptmaschine über den offenen Abgaskanal des Schiffsmotors. Sobald der Brenner stoppt und das Gebläse sich ausschaltet, schließt die Klappe automatisch und die Temperatur wird länger im System gehalten. Der Vorteil: eine signifikante Brennstoffersparnis!</p>
 							</div>

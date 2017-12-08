@@ -49,19 +49,26 @@ body{
 }
 .content-top {
 	margin-top:9rem;
-	.steigerung{
+	.steigerung {
 		display:inline-block;
-		h3{
-			font-family: "helveticaNeue", sans-serif;
-      color: $title__color;
-		}
-		p{
-			font-family: 'pfdintextcompro', sans-serif;
-			font-size: 16px;
-		}
 	}
-
 }
+.impressum {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.impressum h3,
+.steigerung h3 {
+	font-family: "helveticaNeue", sans-serif;
+	color: $title__color;
+}
+.impressum p,
+.steigerung p {
+	font-family: 'pfdintextcompro', sans-serif;
+	font-size: 16px;
+}
+
+.content-down-nobg,
 .content-down {
 	bottom: 0%;
   height: 80px;
@@ -70,12 +77,111 @@ body{
 	display: block;
 	width: 100%;
 	left: 0;
+}
 
-	h1 {
-		font-family: "helveticaNeue", sans-serif;
-    color: $title__color;
-		margin: -15px auto 0px;
-		max-width: 100%;
-		position: relative;
-	}
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.content-down {
+	background: transparent url("/images/footer_light_spot.jpg") no-repeat 49% 20px;
+	/* -webkit-transition: opacity 1750ms ease-in;
+	-moz-transition: opacity 1750ms ease-in;
+	-o-transition: opacity 1750ms ease-in;
+	-ms-transition: opacity 1750ms ease-in;
+	transition: opacity 1750ms ease-in; */
+
+  display: block;
+
+  -webkit-animation: fadeInFromNone 1.75s ease-out;
+  -moz-animation: fadeInFromNone 1.75s ease-out;
+  -o-animation: fadeInFromNone 1.75s ease-out;
+  animation: fadeInFromNone 1.75s ease-out;
+
+	height: 150px;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+}
+
+.content-down-nobg {
+	height: 150px;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+}
+
+.content-down-nobg h1,
+.content-down h1 {
+	font-family: "helveticaNeue", sans-serif;
+	color: $title__color;
+	margin: -22 auto 0px;
+	max-width: 100%;
+	position: relative;
 }

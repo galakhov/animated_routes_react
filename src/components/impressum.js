@@ -19,10 +19,12 @@ class Impressum extends Component {
 				<div className="container content h-100">
 					<div className="content-top row h-50">
 						<div className="col-md-12 mt-5 pt-4 pr-5 pl-0 product-showcase">
-								<img className="responsive" width="480px" alt="Responsive image" src="/images/image2.png" alt="Produktbild" />
+								{
+									/* <img className="responsive" width="480px" alt="Responsive image" src="/images/image2.png" alt="Produktbild" /> */
+								}
 						</div>
-						<div className="steigerung col-lg-5 pl-0">
-							<div className="col-md-12 mt-1 text-left pl-3">
+						<div className="impressum col-md-9 col-lg-5 pl-0">
+							<div className="col-md-12 mt-1 text-left pl-3 pt-3 mb-5">
 								<h3 className="title h5">Impressum</h3>
 								<p><strong>RBU GmbH & Co. KG</strong><br />
 								Hermann-Klammt Straße 7<br />
@@ -37,7 +39,7 @@ RBU GmbH & Co. KG, Hermann-Klammt-Straße 7, D–41460 Neuss,<br />Tel. : +49 (0
 								<p>Die Nutzung sämtlicher Inhalte dieser Website bleibt ausschließlich der RBU GmbH & Co. KG vorbehalten.</p>
 							</div>
 						</div>
-						<div className="col-sm-12 pl-0 pr-0 content-down text-center">
+						<div className="col-sm-12 pl-0 pr-0 content-down-nobg text-center">
 								<h1 className="title display-5">Impressum</h1>
 						</div>
 					</div>
