@@ -23,7 +23,7 @@ export default class TopBar extends Component {
 			<Navbar color="faded" fixed="right" light toggleable>
 				<NavbarBrand className="pt-5" href="/"><img src="images/logo-rbu.png" alt="RBU Germany Logo" /></NavbarBrand>
 				<Collapse isOpen={this.state.isOpen} navbar>
-					<Nav vertical className="col col-sm-4 col-lg-9 col-sm-offset-1 navbar-expand-md fixed-top pl-5 pt-4 navbar-right" navbar>
+					<Nav vertical className="col-sm-6 col-lg-12 col-sm-offset-1 navbar-expand-xs fixed-top pt-4 navbar-right navbar-nav flex-column align-sm-right navbar-nav flex-column navbar-nav flex-column justify-content-sm-center navbar-nav flex-column" navbar>
 						<div className="container">
 							<NavItem>
 								<NavLink exact to="/" className="nav-link js-scroll-trigger">Home</NavLink>

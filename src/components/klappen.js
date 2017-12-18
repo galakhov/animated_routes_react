@@ -16,13 +16,13 @@ class Klappen extends Component {
 	render() {
 		return (
 			<div className="page text-center">
-				<div className="container content h-100">
-					<div className="content-top row h-100 w-100">
+				<div className="mt-0 pt-2 pr-5 pl-0 product-showcase">
+						<img className="responsive" alt="Responsive image" src="/images/image2.png" alt="image to be defined" />
+				</div>
+				<div className="container content h-50">
+					<div className="row h-100 w-100">
 						<div className="steigerung col-lg-12 pl-0">
-							<div className="col-md-12 mt-5 pt-4 pr-5 pl-0 product-showcase">
-									<img className="responsive" width="480px" alt="Responsive image" src="/images/image2.png" alt="image to be defined" />
-							</div>
-							<div className="col-sm-12 col-md-5 mt-1 text-left pl-0 mb-5">
+							<div className="col-sm-12 col-md-5 mt-1 text-left pl-0 mb-2">
 								<h3 className="title h5">Unsere Klappen</h3>
 								<ul>
 									<li>RBU Regelklappen: ein- oder mehrflügelig, nach Anforderung durchschlagend, für kontinuierliche Regelung oder mit Dichtleisten für hohe Dichtheit im geschlossenen Zustand</li>

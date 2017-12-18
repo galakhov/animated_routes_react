@@ -1,6 +1,6 @@
 {
   "name": "animated_routes_react",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "RBU Microsite with animated route transitions using React Router 4, ReactTransitionGroup and Animated.",
   "repository": {
     "type": "git",

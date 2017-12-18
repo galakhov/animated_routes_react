@@ -8,8 +8,8 @@ export default class Footer extends Component {
      <footer className="footer">
        <div className="container d-flex justify-content-end">
          <div className="w-100 p-2 flex-sm-column">
-           <nav className="w-100">
-             <ul className="d-flex flex-row justify-content-md-end">
+           <nav className="w-100 footer-nav">
+             <ul className="d-flex flex-row mx-auto">
                <li className="nav-item pr-2">
                  <NavLink className="nav-link" to="/contact">Kontakt</NavLink>
                </li>

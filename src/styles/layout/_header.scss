@@ -19,6 +19,11 @@ body{
 		.active{
 			text-shadow: 0 0 0 #fff;
 		}
+		&:last-of-type {
+			.nav-link {
+				margin-right: 0;
+			}
+		}
 	}
 
 }

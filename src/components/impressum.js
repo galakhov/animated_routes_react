@@ -15,16 +15,16 @@ class Impressum extends Component {
 
 	render() {
 		return (
-			<div className="page text-center">
-				<div className="container content h-100">
-					<div className="content-top row h-50">
-						<div className="col-md-12 mt-5 pt-4 pr-5 pl-0 product-showcase">
+			<div className="page rbu-impressum text-center">
+				<div className="container content h-75 ml-0">
+					<div className="row h-100">
+						<div className="col-md-12 mt-0 pt-4 pr-5 pl-0 product-showcase">
 								{
 									/* <img className="responsive" width="480px" alt="Responsive image" src="/images/image2.png" alt="Produktbild" /> */
 								}
 						</div>
-						<div className="impressum col-md-9 col-lg-5 pl-0">
-							<div className="col-md-12 mt-1 text-left pl-3 pt-3 mb-5">
+						<div className="impressum col-md-9 col-lg-5 pl-0 mb-4">
+							<div className="col-md-12 mt-1 text-left pl-3 pt-3 mb-2">
 								<h3 className="title h5">Impressum</h3>
 								<p><strong>RBU GmbH & Co. KG</strong><br />
 								Hermann-Klammt Straße 7<br />

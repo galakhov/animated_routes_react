@@ -14,6 +14,8 @@
 @import 'layout/_content';
 @import 'layout/_footer';
 
+@include scrollbar(.5em, #123E75);
+
 html {
   box-sizing: border-box;
 }
@@ -60,6 +62,17 @@ main {
     height: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .navbar-brand img {
+    width: 60%;
+  }
+}
+
 .top-bar {
     position: fixed;
     top: 0;
@@ -72,6 +85,38 @@ main {
     padding: 0 3rem;
     z-index: 999;
     background-color: transparent;
+
+    @media screen and (min-width: 576px) {
+      .navbar ul .container {
+        width: 460px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .navbar ul .container {
+        width: 320px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .navbar ul .container {
+        width: 460px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .navbar ul .container {
+        margin: 0;
+        width: 50%;
+        position: absolute;
+        right: 0;
+      }
+    }
+    @media screen and (max-width: 380px) {
+      .navbar ul .container {
+        width: 65%;
+      }
+    }
 
     li.nav-item a.nav-link {
         margin-right: 1.5rem;
@@ -103,12 +148,44 @@ main {
     display: flex;
     flex: 1;
     flex-flow: column;
-    padding: calc(62px + 3rem) 3rem 3rem 3rem;
+    padding: calc(62px + 3rem) 0rem 0rem 3rem;
     height: 100%;
     // overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: transparent;
     overflow-y: auto;
+
+    img.img-fluid {
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 572px) {
+      img.img-fluid {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 572px) {
+      img.responsive {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 572px) {
+      img.responsive {
+        width: 400px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .container {
+      position: relative;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 0;
+      max-width: 100%;
+    }
 
     ul {
         display: flex;
@@ -198,7 +275,7 @@ main {
         padding: 0 1rem;
     }
     .page {
-        padding: calc(62px + 3rem) 1rem 1rem 1rem;
+        padding: calc(130px + 3rem) 0rem 0rem 1rem;
         ul {
             li {
                 width: 100%;
@@ -206,6 +283,10 @@ main {
             }
         }
     }
+}
+
+.rbu-impressum .impressum {
+  margin-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {

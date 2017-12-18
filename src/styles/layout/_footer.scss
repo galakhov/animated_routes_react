@@ -8,6 +8,20 @@
   line-height: 60px;
 }
 
+.footer-nav {
+  ul {
+    width: 135px;
+    top: 29px;
+    left: 12px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      top: 0px;
+    }
+  }
+}
 
 .footer > .container {
   padding-right: 15px;
