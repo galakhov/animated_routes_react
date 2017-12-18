@@ -22,7 +22,7 @@ class Clean extends Component {
 				<div className="container content h-50">
 					<div className="row h-100 w-100">
 						<div className="steigerung col-lg-12 pl-0">
-							<div className="col-sm-12 col-md-4 mt-1 text-left pl-0 mb-2">
+							<div className="col-sm-12 col-md-4 mt-1 ml-3 text-left pl-0 mb-2">
 								<h3 className="title h5">Ultra Clean</h3>
 								<p>Spezielle RBU Regel- und Absperrklappen sind in den Abgasreinigungsanlagen (Scrubber) auf Schiffen seit vielen Jahren erfolgreich im Einsatz und ermöglichen eine deutliche Unterschreitung der Emissionsgrenzwerte.</p>
 							</div>

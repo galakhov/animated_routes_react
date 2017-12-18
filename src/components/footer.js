@@ -11,7 +11,7 @@ export default class Footer extends Component {
            <nav className="w-100 footer-nav">
              <ul className="d-flex flex-row mx-auto">
                <li className="nav-item pr-2">
-                 <NavLink className="nav-link" to="/contact">Kontakt</NavLink>
+                 <NavLink className="nav-link" data-toggle="modal" to="#contact_form">Kontakt</NavLink>
                </li>
                <li className="nav-item">
                  <NavLink className="nav-link" to="/impressum">Imressum</NavLink>
@@ -57,7 +57,7 @@ export default class Footer extends Component {
 					 <div className="modal-content">
 						 <div className="modal-header bg-dark">
 							 <h5 className="modal-title text-white" id="contactModalTitle" >
-								 Kontakt Formula
+								 Kontakt Formular
 							 </h5>
 							 <button type="button" className="close text-white" data-dismiss="modal" aria-label="Close">
 						 <span aria-hidden="true">&times;</span>

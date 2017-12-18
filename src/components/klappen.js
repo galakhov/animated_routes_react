@@ -22,7 +22,7 @@ class Klappen extends Component {
 				<div className="container content h-50">
 					<div className="row h-100 w-100">
 						<div className="steigerung col-lg-12 pl-0">
-							<div className="col-sm-12 col-md-5 mt-1 text-left pl-0 mb-2">
+							<div className="col-sm-12 col-md-5 mt-1 ml-3 text-left pl-0 mb-2">
 								<h3 className="title h5">Unsere Klappen</h3>
 								<ul>
 									<li>RBU Regelklappen: ein- oder mehrflügelig, nach Anforderung durchschlagend, für kontinuierliche Regelung oder mit Dichtleisten für hohe Dichtheit im geschlossenen Zustand</li>

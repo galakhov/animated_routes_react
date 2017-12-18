@@ -185,6 +185,27 @@ main {
       overflow-x: hidden;
       margin: 0;
       max-width: 100%;
+      margin-bottom: 12%;
+
+      @media screen and (min-width: 1024px){
+        margin-top: 10%;
+      }
+
+      @media screen and (max-width: 1024px){
+        margin-top: 3%;
+      }
+      @media screen and (max-width: 960px){
+        margin-bottom: 17%;
+      }
+      @media screen and (max-width: 768px){
+        margin-bottom: 20%;
+      }
+      @media screen and (max-width: 512px){
+        margin-bottom: 25%;
+      }
+      @media screen and (max-width: 420px){
+        margin-bottom: 33%;
+      }
     }
 
     ul {
@@ -287,6 +308,14 @@ main {
 
 .rbu-impressum .impressum {
   margin-right: 1rem;
+}
+
+.rbu-impressum {
+  .container {
+    @media screen and (min-width: 1024px){
+      margin-top: 6%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
